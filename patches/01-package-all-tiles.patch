@@ -1,0 +1,23 @@
+diff --git a/uwp/CMakeLists.txt b/uwp/CMakeLists.txt
+index 8626e65..f45fca1 100644
+--- a/uwp/CMakeLists.txt
++++ b/uwp/CMakeLists.txt
+@@ -46,14 +46,10 @@ set_source_files_properties(${BIN_DEPS} PROPERTIES
+     VS_DEPLOYMENT_LOCATION "."
+ )
+ 
+-set(PKG_ASSETS
+-    Assets/LockScreenLogo.scale-200.png
+-    Assets/Square44x44Logo.targetsize-24_altform-unplated.png
+-    Assets/Square44x44Logo.scale-200.png
+-    Assets/Square150x150Logo.scale-200.png
+-    Assets/StoreLogo.png
+-    Assets/Wide310x150Logo.scale-200.png
+-)
++# Los mosaicos los genera identidad-visual.py a partir del manifiesto, y son mas de los
++# seis que traia la lista fija: se toma la carpeta entera para que ninguno se quede fuera.
++file(GLOB PKG_ASSETS_GLOB "${CMAKE_CURRENT_SOURCE_DIR}/Assets/*.png")
++set(PKG_ASSETS ${PKG_ASSETS_GLOB})
+ set_source_files_properties(${PKG_ASSETS} PROPERTIES
+     VS_DEPLOYMENT_CONTENT TRUE
+     VS_DEPLOYMENT_LOCATION "Assets"
