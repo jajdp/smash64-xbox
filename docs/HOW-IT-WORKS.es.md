@@ -41,7 +41,7 @@ una carga lateral rota, que es por lo que es el cambio que merece publicarse.
 
 ## Cómo se verificó esto
 
-El paquete construido así lleva corriendo en una consola desde el 2026-09-20: se ha jugado en dos Xbox Series desde el 2026-09-20, a 59,9 cuadros por segundo con el paquete de texturas HD.
+El paquete construido así lleva corriendo en una consola desde el 2026-09-20: se ha jugado en dos Xbox Series X desde el 2026-09-20, a 59,9 cuadros por segundo con el paquete de texturas HD.
 
 Lo que publica este repositorio es la receta y las herramientas, y las dos se releyeron y sanearon
 antes de publicarlas: ninguna ruta de la máquina donde se escribieron, ninguna huella de

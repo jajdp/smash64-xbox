@@ -10,7 +10,17 @@ half that is ours, and say plainly that the other half is not.
 
 *(Español: [README.es.md](README.es.md))*
 
-It is not a theory: it has been played on two Xbox Series consoles since 2026-09-20, at 59.9 frames per second with the HD texture pack.
+It is not a theory: it has been played on two Xbox Series X consoles since 2026-09-20, at 59.9 frames per second with the HD texture pack.
+
+## Which console this was tested on
+
+**An Xbox Series X**, in Developer Mode. Both of the consoles this was built and tested on are Series X,
+so that is the only hardware anything claimed here covers.
+
+**A Series S has never been tried — not once.** It is a different machine: less memory available to a
+game and a weaker GPU. This may work on one, it may run slower, or it may not start at all; nothing here
+has been measured on it. If you run it on a Series S, what you get is not what this README reports, and
+none of the numbers here are a promise about that console.
 
 ## What is here
 

@@ -39,7 +39,7 @@ looks like a broken sideload, which is why it is the one change worth publishing
 
 ## How this was verified
 
-The package built this way has been running on a console since 2026-09-20: it has been played on two Xbox Series consoles since 2026-09-20, at 59.9 frames per second with the HD texture pack.
+The package built this way has been running on a console since 2026-09-20: it has been played on two Xbox Series X consoles since 2026-09-20, at 59.9 frames per second with the HD texture pack.
 
 What this repository publishes is the recipe and the tooling, and both were re-read and sanitised
 before publication: no path from the machine they were written on, no certificate thumbprint (it is
