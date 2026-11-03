@@ -2,6 +2,19 @@
 
 All notable changes to this recipe. Dates are `YYYY-MM-DD`.
 
+## 1.0.5 — 2026-11-03
+
+### Changed
+
+- **Passages that introduced a fact as "the same as in the other port" now state the fact.** They
+  named no repository, so there was nothing for the reader to go and look up, and the fact itself
+  went unsaid. Four comments compared this port with the others: the wrapper being the author's, the
+  signing certificate and where the manifest version comes from.
+
+  Still said, because the reader can act on it: everything that is **not** ours — the upstream
+  project, the third-party forks, the files taken under their own license — and the sentences that
+  place this port among others without naming any, which stand on their own.
+
 ## 1.0.4 — 2026-11-03
 
 ### Changed

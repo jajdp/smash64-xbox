@@ -5,7 +5,7 @@ El autor (JRickey) publica el envoltorio en `uwp\` de su rama `codex/uwp-xbox`. 
 cual salvo por dos cosas, que son de NUESTRO empaquetado, no fallos suyos:
 
   1. El manifiesto declara `Publisher="CN=JRickey"`. Firmamos con el certificado del
-     proyecto (`CN=Decompilaciones`, el mismo de los demas ports propios) y el publicador
+     proyecto (`CN=Decompilaciones`) y el publicador
      del manifiesto TIENE que coincidir con el sujeto del certificado o la firma falla.
 
   2. El manifiesto NO declara pantalla de carga (`uap:SplashScreen`). El usuario prepara su

@@ -6,13 +6,13 @@
   Segunda mitad de la receta: con la DLL del juego ya compilada (-DBATTLESHIP_UWP=ON), se
   configura el envoltorio WinRT de `uwp\` y se empaqueta con MSBuild.
 
-  A diferencia de los demas ports propios, el envoltorio lo publica el AUTOR del port en su
+  Aqui el envoltorio no es nuestro: lo publica el AUTOR del port en su
   rama `codex/uwp-xbox`. Lo unico nuestro son los dos arreglos de `ssb_parche_uwp.py`
   (publicador y pantalla de carga) y los mosaicos de `identidad-visual.py`. Por eso este
   script empieza copiando las fuentes espejadas del subproyecto —que son las parcheadas— al
   arbol de compilacion: alli manda siempre lo que hay en `xbox\fuentes\uwp\`.
 
-  La firma usa el certificado del proyecto (CN=Decompilaciones), el mismo de los demas ports,
+  La firma usa el certificado del proyecto (CN=Decompilaciones),
   en vez del autofirmado que genera el flujo del autor: asi la consola no necesita confiar en
   un publicador nuevo.
 
@@ -54,7 +54,7 @@ Copy-Item -LiteralPath (Join-Path $fuentes "Assets") -Destination $assetsDst -Re
 Write-Host ("  {0} mosaicos" -f (Get-ChildItem $assetsDst -Filter *.png).Count)
 
 # La version la mete CMake en el manifiesto por configure_file (@BATTLESHIP_PACKAGE_VERSION@),
-# no se escribe a mano como en los otros ports.
+# no se escribe a mano.
 Write-Host "=== 1. configurar el envoltorio WinRT ==="
 & $cmake -S $destino -B (Join-Path $Arbol "build-uwp") `
   -G "Visual Studio 17 2022" -A x64 `
