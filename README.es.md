@@ -58,6 +58,15 @@ Estas son las cosas que costaron tiempo, y ninguna está en el README del autor:
 
 ## Créditos y licencia
 
+**Casi nada de lo que hace que esto funcione es nuestro.** Este repositorio es una receta que une el trabajo de otros; sin cualquiera de estas piezas no habría port.
+
+| Qué hace | Quién lo hizo | Licencia |
+|---|---|---|
+| **[BattleShip](https://github.com/JRickey/BattleShip)** — el port a PC de *Super Smash Bros.*, **incluido su trabajo de UWP** | **JRickey** | see the project |
+
+**La receta de empaquetado, las herramientas y esta documentación** son de **Recompilaciones**.
+
+
 El port es de **JRickey/BattleShip**, bajo MIT. La receta de empaquetado, las herramientas y esta
 documentación son de **Recompilaciones**, bajo la [licencia MIT](LICENSE).
 
