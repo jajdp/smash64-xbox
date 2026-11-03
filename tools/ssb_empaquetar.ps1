@@ -22,11 +22,15 @@
 [CmdletBinding()]
 param(
   [string]$Version = "0.1.0.0",
-  [string]$Arbol = "<tree>",
+  [string]$Arbol = "",
   [string]$Huella = $null   # CN=Decompilaciones
 )
 
 $ErrorActionPreference = 'Stop'
+if (-not $Arbol) {
+  throw 'falta -Arbol: la raiz del arbol del juego, la que tiene build-windows\ y uwp\'
+}
+if (-not (Test-Path -LiteralPath $Arbol)) { throw "no existe el arbol: $Arbol" }
 $cmake = "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe"
 $msbuild = "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe"
 $fuentes = Join-Path $PSScriptRoot "..\fuentes\uwp" | Convert-Path
